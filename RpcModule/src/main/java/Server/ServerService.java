@@ -44,7 +44,6 @@ public class ServerService implements Runnable{
             }
 
             // 3. 查找并执行服务方法
-            //此处打印类名的意义在于，我们可以得到客户端发送过来的参数来判断执行本地某个方法，并将返回值发送回客户端
             System.out.println("要執行的类型为：" + request.getClassName());
             Class<?>  service = serviceRegistry.get(request.getClassName());
             if(service != null) {
