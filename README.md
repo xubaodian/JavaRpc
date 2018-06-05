@@ -13,7 +13,7 @@ RPC全程Remote Procedure Call Protocol，即远程过程调用协议，它是�
 #### RPC Java实例讲解
 实例采用Maven构建，实例比较简单，**实现过程中参考了网上代码** 有助于对分布式调用的理解，大家可以下载后对照实现，下载地址</br>
 git地址：https://github.com/xubaodian/JavaRpc.git，<br>
-csdn地址：<br/>
+csdn地址：https://download.csdn.net/download/u011350550/10460169 <br/>
 1、服务端代码</br>
 服务端要接收客户端调用，肯定要接收客户端的请求，所以需要一个ServerSocket来接收客户端连接，采用多线程方式，客户端连接比较多时，就会开辟较多线程，可能会占用太多资源，导致服务挂掉，所以我们采用线程池的方式，这样线程可实现复用回收等等。
 代码包括ServerService.java和Server.java,如下
